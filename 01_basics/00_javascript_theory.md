@@ -1,8 +1,12 @@
 ## JavaScript Basics Theory
 
-- JavaScript is a clint-side, object-oriented scripting language.
+- JavaScript is a clint side scripting language.
+
+- JavaScript is a object-oriented programming language for web applications.
 
 - It is used to make web page alive.
+
+- It is a dynamic typing language.
 
 - It can execute not only in the browser but also on the server.
 
@@ -10,13 +14,14 @@
 
 - It has evolved significantly as a language and is now used to perform a wide variety of tasks.
 
-- JavaScript handle both <b>synchronous and asynchronous</b> operations.
+- JavaScript handle both **synchronous and asynchronous<** operations.
 
 - V8 engine is a JavaScript engine.
 
 - NodeJs makes in c++ language by 'Ryan Dahl'.
 
 ### How to execute JavaScript?
+
 Method-1. 
 
     JavaScript can be executed directly inside the browser console
@@ -27,7 +32,7 @@ Method-2.
 
 Method-3.
 
-    Another way to execute JavaScript is to insert it inside the <script> tag of an HTML document.
+    Another way to run JavaScript is by embedding it within the <script> tag in an HTML document or by writing it in a separate .js file and linking it to the HTML file. (internal or external linking)
 
 Method-4. 
 
@@ -67,7 +72,7 @@ The JavaScript code manipulates the DOM, handles user interactions, or performs 
 
 - Simple things (simple API [Application Programming Interface])
 
-- <b>Major modern browser support</b>
+- **Major modern browser support**
 
 ### What is ECMAScript ?
 
@@ -84,14 +89,16 @@ The JavaScript code manipulates the DOM, handles user interactions, or performs 
 - ES2 - 1998 [ECMAScript 2nd version]
 - ES3 - 1999 [ECMAScript 3rd version]
 - ES5 - 2009 
-- ES6 - 2015 [ECMAScript]
+- ES6 - 2015 [ECMAScript](https://tc39.es/ecma262/)
 - Yearly version - 2016, 2017, 2018, 2019, 2020
 
 ### What is Syntax?
 Some set of rules follow during writing a JavaScript program called syntax.  
 
 ### What is Comments?
-Sometimes we want our program to contains a text which is not executed by the Js engine, such a text is called comment. Sometimes comments are used to prevent the execution of some lines of code.
+Sometimes we want our program to contains a text which is not executed by the Js engine, such a text is called comment. 
+<br> 
+Sometimes comments are used to prevent the execution of some lines of code.
 
     // This is single line comment
 
