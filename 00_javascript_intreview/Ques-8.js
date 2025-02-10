@@ -1,3 +1,4 @@
+
 let x = NaN;
 let y = NaN;
 

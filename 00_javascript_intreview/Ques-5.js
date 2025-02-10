@@ -1,3 +1,4 @@
+
 let num = 19992;
 
 let binaryNum = num.toString(2);

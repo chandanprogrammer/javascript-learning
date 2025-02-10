@@ -1,3 +1,4 @@
+
 // Concept of hoisting -
 
 // Create a Global execution context --> Global Object (this refer to window object)
