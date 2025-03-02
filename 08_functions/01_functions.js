@@ -13,10 +13,10 @@ function myFun(){ // Function definition
 // myFun; // Function reference
 // myFun(); // Function execution , Function calling
 
-function addTwoNumbers(num1, num2){ // parameter
-    const sum = num1 + num2;
+// function addTwoNumbers(num1, num2){ // parameter
+    // const sum = num1 + num2;
     // console.log(sum);
-}
+// }
 
 // addTwoNumbers(2, 5);
 // addTwoNumbers(2, "5");

@@ -1,4 +1,3 @@
-
 /* ---------- Date object ---------- */
 
 /* All date calculated from 1 Jan 1970 */
@@ -8,10 +7,10 @@ const myDate = new Date();
 // console.log(typeof myDate); // object
 // console.log(myDate.toString());
 // console.log(myDate.toDateString());
-// console.log(myDate.toISOString()); 
+// console.log(myDate.toISOString());
 // console.log(myDate.toJSON());
 // console.log(myDate.toLocaleString());
-// console.log(myDate.toLocaleDateString());
+// console.log(myDate.toLocaleDateString());  // 26/2/2025
 // console.log(myDate.toLocaleTimeString());
 // console.log(myDate.toTimeString());
 // console.log(myDate.toUTCString());
@@ -34,3 +33,13 @@ const newDate = new Date();
 // console.log(newDate.getMonth()+1);
 // console.log(newDate.getTime());
 // console.log(newDate.toLocaleString('default', { weekday: 'long'}));
+
+const options = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
+
+console.log(newDate.toLocaleDateString("de-DE", options));
+console.log(newDate.toLocaleDateString(undefined, options)); // undefined means to local timezone and defult locale

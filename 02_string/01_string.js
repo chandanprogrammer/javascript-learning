@@ -1,4 +1,4 @@
-/* -------- String & it's Methods */
+/* -------- String & it's Methods -------- */
 
 /* 
     ---> String is a object

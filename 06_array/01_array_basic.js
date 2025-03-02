@@ -1,10 +1,9 @@
 // Array is a object, it can many values under a single name.
 // Array are mutable.
 // Javascript array are mixed data type
-// Javascript array value can be change 
+// Javascript array value can be change
 // Javascript array re-sizeable
 // Javascript array copy operations create shallow copies (that means whose properties share the same references point).
-
 
 let myArr = [3, 6, 7, 56];
 // console.log(myArr);
@@ -12,7 +11,15 @@ let myArr = [3, 6, 7, 56];
 // console.log(myArr.length); // return length of array
 // console.log(myArr.toString());
 
-const nameArr = ["Chandan", "Raushan", "Rohit", "Pushpa", "Raghav", "Aman", "Suraj"];
+const nameArr = [
+  "Chandan",
+  "Raushan",
+  "Rohit",
+  "Pushpa",
+  "Raghav",
+  "Aman",
+  "Suraj",
+];
 // console.log(nameArr);
 // console.log(nameArr[0]);
 // console.log(nameArr[2]);
@@ -20,6 +27,7 @@ const nameArr = ["Chandan", "Raushan", "Rohit", "Pushpa", "Raghav", "Aman", "Sur
 
 const numbers = new Array(1, 2, 3, 4); // Another method to declear array
 // console.log(numbers);
+// numbers[2] = 8;
 // console.log(numbers[2]);
 
 // Array Methods -------------->
@@ -50,8 +58,7 @@ let myn2 = myArr2.splice(1, 3); // 3rd index include
 // console.log("C --", myArr2);
 
 // Interview Question  ---> Different between slice and splice
-// slice returns a piece of the array but it doesn't affect the original array. 
+// slice returns a piece of the array but it doesn't affect the original array.
 // splice changes the original array by removing, replacing, or adding values and returns the affected values.
 
 // array declear in crome inspect and run array then see prototype
-

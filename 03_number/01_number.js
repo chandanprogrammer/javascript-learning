@@ -1,3 +1,5 @@
+/* -------- Number & it's Methods -------- */
+
 let score = 99;
 console.log(score);
 
@@ -14,9 +16,8 @@ console.log(balance.toPrecision(4)); // 188.9
 console.log(balance.toPrecision(2)); // 1.9e+2
 
 const anotherBlance = 100000;
-console.log(anotherBlance.toLocaleString('en-IN')); // 1,00,000
+console.log(anotherBlance.toLocaleString("en-IN")); // 1,00,000
 
 // console.log(Number.__proto__);
 console.log(Number.MAX_VALUE);
 console.log(Number.MAX_SAFE_INTEGER);
-
