@@ -8,11 +8,17 @@
 // let score = undefined  /* undefined as undefined --> NaN as number */
 // let score = true;      /* boolean --> 1 number */
 // let score = false;     /* boolean --> 0 number */
-let score = 12; /* number --> number */
+let score = 12.9; /* number --> number */
 console.log(score, typeof score);
 
 let scoreInNumber = Number(score);
 console.log(scoreInNumber, typeof scoreInNumber); // written just like methods
+
+let scoreInNumber2 = parseInt(score);
+console.log(scoreInNumber2, typeof scoreInNumber2);
+
+let scoreInNumber3 = parseFloat(score);
+console.log(scoreInNumber3, typeof scoreInNumber3);
 
 /* --------- Try to change in Boolean --------- */
 
