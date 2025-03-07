@@ -1,5 +1,11 @@
 /* --------- Object --------- */
 
+/* 
+  --> In object-oriented programming, an "object" represents a real-world entity, meaning it is a software construct that models a tangible thing or concept like a person, car, book, or even an abstract idea like a bank account, with defined attributes (properties) and behaviors (methods) that mirror its real-world counterpart; essentially acting as a digital representation of something in the physical world
+
+  --> A function is a set of instructions that can be called independently, while a method is a function that's associated with an object or class
+*/
+
 /* Example of deep copy in string */
 let fullName = "Aman Kumar";
 console.log(fullName);

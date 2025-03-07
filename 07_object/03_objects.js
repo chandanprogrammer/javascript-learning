@@ -1,3 +1,5 @@
+/* --------- create singleton object ----------*/
+
 const tinderUser = new Object();
 // console.log(tinderUser);
 
@@ -9,6 +11,7 @@ tinderUser.isLoggedIn = false;
 
 const regularUser = {
   email: "someexample@gmail.com",
+  age: 24,
   fullname: {
     userfullname: {
       firstname: "chandan",
@@ -19,7 +22,7 @@ const regularUser = {
 
 // console.log(regularUser);
 // console.log(regularUser.fullname.userfullname.lastname);
-// const {email} = regularUser // object de-strure
+// const {email, age} = regularUser /* object destructuring */
 // const {email : e} = regularUser
 
 // console.log(email);
@@ -29,11 +32,11 @@ const obj0 = { 0: "a", 10: "b" };
 const obj1 = { 1: "a", 2: "b" };
 const obj2 = { 3: "a", 3: "b" };
 
-// const obj3 = {obj1, obj2}
+// const obj3 = {obj1, obj2} /* object ke andar array bn jayega */
 // console.log(obj3);
 
-// const obj3 = Object.assign(obj1, obj2)
-// const obj4 = Object.assign({} ,obj0, obj1, obj2) // {} --> target, and other all are source
+// const obj3 = Object.assign(obj1, obj2) /* all value copies in obj1 */
+// const obj4 = Object.assign({} ,obj0, obj1, obj2) /* all value copies in {} objects, {} --> structure (target, and other all are source) */
 
 // console.log(obj3);
 // console.log(obj4);
@@ -41,7 +44,7 @@ const obj2 = { 3: "a", 3: "b" };
 const obj3 = { ...obj1, ...obj2 };
 // console.log(obj3);
 
-// from server
+// data comes from database
 const user = [
   {
     id: 1,
@@ -59,18 +62,20 @@ const user = [
 // console.log(user[1].name);
 
 // console.log(tinderUser)
-// console.log(Object.keys(tinderUser)); // return array
-// console.log(Object.values(tinderUser)); // return array
-// console.log(Object.entries(tinderUser)); // return array
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+// console.log(Object.keys(tinderUser)); /* return array of key */
+// console.log(Object.values(tinderUser)); /* return array of values */
+// console.log(Object.entries(tinderUser)); /* return array of all entries */
+console.log(tinderUser.hasOwnProperty("isLoggedIn")); /* return true or false */
 
-// Json
-// {
-//     "id" : 123,
-//     "name": "chandan",
-// }
+/*
+Json
+    {
+        "id" : 123,
+        "name": "chandan",
+    }
 
-// [
-//     {},
-//     {}
-// ]
+    [
+        {},
+        {}
+    ]
+*/

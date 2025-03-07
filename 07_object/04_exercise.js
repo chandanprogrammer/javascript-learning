@@ -46,7 +46,7 @@ const newObj = new Object(myTeas);
 teaCopy.greentea.cups.one = 4;
 console.log(newObj);
 
-const anotherCopy = myTeas; // reference not speak copy
+const anotherCopy = myTeas; // reference, not speak copy
 console.log(teaCopy);
 
 //Problem: Add a custom method describe to the tea object that returns a description string.
