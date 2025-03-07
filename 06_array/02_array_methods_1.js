@@ -68,10 +68,21 @@ let myn2 = myArr2.splice(1, 3); // 3rd index include return 1, 2, 3 index
     values():-> This method returns an iterators that provides the values for each index in the array. It takes no arguments.
 */
 
-const arr = ["Raghav", "Sonu", "Aman", "Niraj"];
+const arr = ["Raghav", "Sonu", "Aman", "Suraj Kumar", "Niraj"];
 let iterator = arr.values();
 // console.log(val);
 
 for (let value of iterator) {
   console.log(value);
 }
+
+let index = arr.indexOf("Suraj-Kumar");
+// console.log(index); // -1 return if not present in array
+
+let index2 = arr.indexOf("Suraj Kumar");
+console.log(index2);
+
+if (index2 !== -1) {
+  arr.splice(index, 1);
+}
+console.log(arr);

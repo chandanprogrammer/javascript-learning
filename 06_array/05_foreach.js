@@ -1,4 +1,4 @@
-// forEach loop
+/* ----------- forEach method nothing return ----------- */
 
 const coding = ["js", "cpp", "java", "python"];
 
