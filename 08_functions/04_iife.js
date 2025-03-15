@@ -2,12 +2,12 @@
 
 // (Function defination)(Function execution)
 
-/* Named iife */
-(function cahi() {
+/* named iife */
+(function connectDB() {
   console.log(`DB connected`);
 })();
 
-// ; jruri hai iife ke case me
+// ; jruri hai iife ke case me context ko rokne ke liye
 
 /* 
     Global scope se pollution se problem ke resion se globle scope me jo variable use hota hai us pollution ko htane ke liye iife ka use krte hai.
@@ -21,3 +21,10 @@
 ((name) => {
   console.log(`Again 2 db connected ${name}`);
 })("demo");
+
+let config = (function () {
+  let settings = {
+    theme: "dark",
+  };
+  return settings;
+})();

@@ -3,6 +3,7 @@
 /* All date calculated from 1 Jan 1970 */
 
 const myDate = new Date();
+// const myDate = Date(); /* new keywords are not compulsory but best practice */
 // console.log(myDate);
 // console.log(typeof myDate); // object
 // console.log(myDate.toString());
@@ -42,4 +43,4 @@ const options = {
 };
 
 console.log(newDate.toLocaleDateString("de-DE", options));
-console.log(newDate.toLocaleDateString(undefined, options)); // undefined means to local timezone and defult locale
+console.log(newDate.toLocaleDateString(undefined, options)); // undefined means to local timezone and default locale

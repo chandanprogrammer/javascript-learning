@@ -17,10 +17,10 @@ function addTwoNumbers(num1, num2) {
   console.log(sum);
 }
 
-// addTwoNumbers(2, 5); /* value pass as a 'argument' */
-// addTwoNumbers(2, "5");
-// addTwoNumbers(2, null);
-// addTwoNumbers(2, "a");
+addTwoNumbers(2, 5); /* value pass as a 'argument' */
+addTwoNumbers(2, "5"); // 25
+addTwoNumbers(2, null); // 2
+addTwoNumbers(2, "a"); // 2a
 
 // const returnfun  = addTwoNumbers(1, 2);
 // console.log(returnfun); // undefined because nothing return
@@ -34,7 +34,7 @@ function sumTwoNumbers(num1, num2) {
 const returnValue = sumTwoNumbers(1, 2);
 // console.log(returnValue);
 
-// function loginUserMessage(username = "defalutValue"){ // defult value
+// function loginUserMessage(username = "defaultValue"){ // default  value
 //     return `${username} just logged in`
 // }
 
