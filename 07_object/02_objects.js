@@ -30,19 +30,18 @@ const JsUser = {
   lastLoginDays: ["Monday", "Wednesday"],
 };
 
-// console.log(JsUser.name);
-// console.log(JsUser[name]); // wrong
-// console.log(JsUser["name"]);
+console.log(JsUser.firstName);
+// console.log(JsUser[firstName]); // wrong
+console.log(JsUser["firstName"]);
 
 // console.log(JsUser.full name); // wrong
 // console.log(JsUser["full name"]);
 
 // console.log(JsUser.mySym);
-// console.log(JsUser[mySym]);
-// console.log(typeof JsUser[mySym]);
+// console.log(typeof JsUser[mySym], JsUser[mySym]); // refer symbol
 
 // console.log(JsUser.email);
-JsUser.email = "change-email@gmail.com";
+JsUser.email = "change-email@gmail.com"; // change email
 // console.log(JsUser);
 // Object.freeze(JsUser); // object lock not change email (if try to change then no any error but not change)
 JsUser.email = "again-change-email@gmail.com";
@@ -58,7 +57,7 @@ console.log(JsUser.gretting());
 JsUser.grettingTwo = function () {
   console.log(
     `Hello Js User, ${this.name}`
-  ); /* `` string interpulation / same object ko refer krne ke liye this keyword ko use krte hai */
+  ); /* `` string interpulation and same object ko refer krne ke liye this keyword ko use krte hai */
 };
 
 console.log(JsUser.grettingTwo());

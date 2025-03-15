@@ -52,3 +52,13 @@ console.log(teaCopy);
 //Problem: Add a custom method describe to the tea object that returns a description string.
 
 //Problem: Merge two objects representing different teas into one.
+
+
+// Return the number of properties in user
+const randomUser = {
+  name: "rahul", 
+  pasword: "1234"
+}
+
+console.log(Object.keys(randomUser)); // return array object
+console.log(Object.keys(randomUser).length); 

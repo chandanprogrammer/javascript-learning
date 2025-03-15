@@ -25,14 +25,15 @@ const regularUser = {
 // const {email, age} = regularUser /* object destructuring */
 // const {email : e} = regularUser
 
-// console.log(email);
-// console.log(e);
+// console.log(email, e);
+
+/* ----------- Object copy -----------  */
 
 const obj0 = { 0: "a", 10: "b" };
 const obj1 = { 1: "a", 2: "b" };
 const obj2 = { 3: "a", 3: "b" };
 
-// const obj3 = {obj1, obj2} /* object ke andar array bn jayega */
+// const obj3 = {obj1, obj2} /* object ke andar object bn jayega */
 // console.log(obj3);
 
 // const obj3 = Object.assign(obj1, obj2) /* all value copies in obj1 */
@@ -41,10 +42,10 @@ const obj2 = { 3: "a", 3: "b" };
 // console.log(obj3);
 // console.log(obj4);
 
-const obj3 = { ...obj1, ...obj2 };
+const obj3 = { ...obj1, ...obj2 }; /* spread operator (shallow copy) */
 // console.log(obj3);
 
-// data comes from database
+/* data comes from database */
 const user = [
   {
     id: 1,
@@ -62,20 +63,21 @@ const user = [
 // console.log(user[1].name);
 
 // console.log(tinderUser)
-// console.log(Object.keys(tinderUser)); /* return array of key */
+// console.log(Object.keys(tinderUser)); /* return array of keys */
 // console.log(Object.values(tinderUser)); /* return array of values */
 // console.log(Object.entries(tinderUser)); /* return array of all entries */
 console.log(tinderUser.hasOwnProperty("isLoggedIn")); /* return true or false */
 
 /*
-Json
+  Json formate 1 ---> keys and values both are in string formate
     {
-        "id" : 123,
-        "name": "chandan",
+      "id" : 123,
+      "name": "chandan",
     }
-
-    [
-        {},
-        {}
-    ]
+    
+  Json formate 2
+      [
+          {},
+          {}
+      ]
 */
